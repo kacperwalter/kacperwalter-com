@@ -14,4 +14,28 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     // filter: brightness(40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    color: white;
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.main-container nav img {
+    width: 200px;
+}
+.main-container section .description {
+    margin-top: 65%;
+    width: 60%;
+    font-size: 35px;
+}
+.main-container section .social-buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    font-size: 33px;
 }

@@ -51,8 +51,12 @@ body {
   font-size: 1.6em;
 }
 
+.main-container section {
+  position: absolute;
+  bottom: 7%;
+}
+
 .main-container section .description {
-  margin-top: 85%;
   width: 100%;
   font-size: 1.7em;
 }
@@ -65,5 +69,57 @@ body {
   gap: 6%;
   font-weight: 300;
   font-size: 1.6em;
+}
+
+@media (min-width: 576px) {
+  .main-container section .description {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container section .description {
+    width: 75%;
+  }
+  .main-container section .social-buttons {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-container section .description {
+    width: 70%;
+  }
+  .main-container section .social-buttons {
+    margin-top: 3%;
+    gap: 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container section .description {
+    width: 60%;
+  }
+  .main-container section .social-buttons {
+    gap: 4%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .main-container section .description {
+    width: 53%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .main-container {
+    width: 90%;
+  }
+  .main-container section .description {
+    width: 42%;
+  }
+  .main-container section .social-buttons {
+    margin-top: 2%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -46,9 +46,14 @@ body {
 .main-container section .social-buttons {
     display: flex;
     margin-top: 6%;
-    gap: 6%;
     font-weight: 300;
     font-size: 1.6em;
+}
+.main-container section .social-buttons .behance {
+    margin-left: 5%;
+}
+.main-container section .social-buttons .linkedin {
+    margin-left: 5%;
 }
 @media (min-width: 576px) {
     .main-container section .description {
@@ -69,15 +74,23 @@ body {
     }
     .main-container section .social-buttons {
         margin-top: 3%;
-        gap: 5%;
+    }
+    .main-container section .social-buttons .behance {
+        margin-left: 4%;
+    }
+    .main-container section .social-buttons .linkedin {
+        margin-left: 4%;
     }
 }
 @media (min-width: 1200px) {
     .main-container section .description {
         width: 60%;
     }
-    .main-container section .social-buttons {
-        gap: 4%;
+    .main-container section .social-buttons .behance {
+        margin-left: 4%;
+    }
+    .main-container section .social-buttons .linkedin {
+        margin-left: 4%;
     }
 }
 @media (min-width: 1350px) {

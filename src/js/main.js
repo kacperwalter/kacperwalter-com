@@ -35,3 +35,42 @@ const cursorExpand = () => {
 
 document.addEventListener('mousemove', cursorMove)
 document.addEventListener('click', cursorExpand)
+
+// social text animation stuff !!! lot of mess and shit code xD - needs to be refactored
+class AnimatedText {
+    constructor(target, texts, changeInterval, updateInterval, onTextChanged) {
+        let currentText = parseInt(Math.random() * texts.length);
+        let areaText = texts[0];
+        this.t1 = setInterval(function () {
+            let c = parseInt(Math.random() * Math.max(texts[currentText].length, areaText.length));
+            let s = texts[currentText][c];
+            if (typeof s == 'undefined')
+                s = " ";
+            while (areaText.length < c)
+                areaText += " ";
+            let newText = (areaText.slice(0, c) + s + areaText.slice(c + 1)).trim();
+            let diff = !(newText == areaText);
+            areaText = newText;
+            if (onTextChanged && diff)
+                onTextChanged();
+            target.innerHTML = areaText.length == 0 ? "&nbsp;" : areaText;
+        }.bind(this), updateInterval ? updateInterval : 50);
+        this.t2 = setInterval(function () {
+            currentText = parseInt(Math.random() * texts.length);
+        }.bind(this), changeInterval ? changeInterval : 4000);
+    }
+    stop() { clearInterval(this.t1); clearInterval(this.t2); }
+}
+
+const githubButton = document.querySelector('.github');
+const behanceButton = document.querySelector('.behance');
+const linkedinButton = document.querySelector('.linkedin');
+
+githubButton.addEventListener('mouseover', (e) => {
+    new AnimatedText(githubButton, ['GitHub', "*&$^@#", "@*)^@="], 200, 50);
+    setTimeout(1000);
+    githubButton.textContent = "GitHub";
+});
+githubButton.addEventListener('mouseleave', () => {
+    githubButton.textContent = "GitHub";
+})

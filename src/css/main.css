@@ -67,9 +67,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 6%;
-  gap: 6%;
   font-weight: 300;
   font-size: 1.6em;
+}
+
+.main-container section .social-buttons .behance {
+  margin-left: 5%;
+}
+
+.main-container section .social-buttons .linkedin {
+  margin-left: 5%;
 }
 
 @media (min-width: 576px) {
@@ -93,7 +100,12 @@ body {
   }
   .main-container section .social-buttons {
     margin-top: 3%;
-    gap: 5%;
+  }
+  .main-container section .social-buttons .behance {
+    margin-left: 4%;
+  }
+  .main-container section .social-buttons .linkedin {
+    margin-left: 4%;
   }
 }
 
@@ -101,8 +113,11 @@ body {
   .main-container section .description {
     width: 60%;
   }
-  .main-container section .social-buttons {
-    gap: 4%;
+  .main-container section .social-buttons .behance {
+    margin-left: 4%;
+  }
+  .main-container section .social-buttons .linkedin {
+    margin-left: 4%;
   }
 }
 

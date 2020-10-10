@@ -8,4 +8,13 @@ const parallax = (e) => {
     })
 }
 
-document.addEventListener('mousemove', parallax);
+const parallaxCondition = () => {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log('mobile');
+    } else {
+        console.log('not mobile');
+        document.addEventListener('mousemove', parallax);
+    }
+}
+
+parallaxCondition();

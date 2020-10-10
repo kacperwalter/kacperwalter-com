@@ -36,7 +36,7 @@ const cursorExpand = () => {
 document.addEventListener('mousemove', cursorMove)
 document.addEventListener('click', cursorExpand)
 
-// social text animation stuff !!! lot of mess and shit code xD - needs to be refactored
+// social text animation stuff !!! lot of mess
 class AnimatedText {
     constructor(target, texts, changeInterval, updateInterval, onTextChanged) {
         let currentText = parseInt(Math.random() * texts.length);
@@ -58,6 +58,10 @@ class AnimatedText {
         this.t2 = setInterval(function () {
             currentText = parseInt(Math.random() * texts.length);
         }.bind(this), changeInterval ? changeInterval : 4000);
+        this.stopAnimation = () =>{
+            clearInterval(t1);
+            clearInterval(t2);
+        }
     }
     stop() { clearInterval(this.t1); clearInterval(this.t2); }
 }
@@ -68,9 +72,8 @@ const linkedinButton = document.querySelector('.linkedin');
 
 githubButton.addEventListener('mouseover', (e) => {
     new AnimatedText(githubButton, ['GitHub', "*&$^@#", "@*)^@="], 200, 50);
-    setTimeout(1000);
-    githubButton.textContent = "GitHub";
 });
 githubButton.addEventListener('mouseleave', () => {
     githubButton.textContent = "GitHub";
+    newAnim1.stopAnimation();
 })

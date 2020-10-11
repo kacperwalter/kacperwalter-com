@@ -11,6 +11,16 @@ body {
     background-color: black;
     cursor: none;
 }
+a:link {
+    color: white;
+    text-decoration: none;
+    cursor: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+    cursor: none;
+}
 .cursor {
     width: 35px;
     height: 35px;

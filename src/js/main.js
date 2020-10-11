@@ -36,44 +36,36 @@ const cursorExpand = () => {
 document.addEventListener('mousemove', cursorMove)
 document.addEventListener('click', cursorExpand)
 
-// social text animation stuff !!! lot of mess
-class AnimatedText {
-    constructor(target, texts, changeInterval, updateInterval, onTextChanged) {
-        let currentText = parseInt(Math.random() * texts.length);
-        let areaText = texts[0];
-        this.t1 = setInterval(function () {
-            let c = parseInt(Math.random() * Math.max(texts[currentText].length, areaText.length));
-            let s = texts[currentText][c];
-            if (typeof s == 'undefined')
-                s = " ";
-            while (areaText.length < c)
-                areaText += " ";
-            let newText = (areaText.slice(0, c) + s + areaText.slice(c + 1)).trim();
-            let diff = !(newText == areaText);
-            areaText = newText;
-            if (onTextChanged && diff)
-                onTextChanged();
-            target.innerHTML = areaText.length == 0 ? "&nbsp;" : areaText;
-        }.bind(this), updateInterval ? updateInterval : 50);
-        this.t2 = setInterval(function () {
-            currentText = parseInt(Math.random() * texts.length);
-        }.bind(this), changeInterval ? changeInterval : 4000);
-        this.stopAnimation = () =>{
-            clearInterval(t1);
-            clearInterval(t2);
-        }
-    }
-    stop() { clearInterval(this.t1); clearInterval(this.t2); }
-}
+// social text animation stuff
+const links = document.querySelectorAll(".social-button");
 
-const githubButton = document.querySelector('.github');
-const behanceButton = document.querySelector('.behance');
-const linkedinButton = document.querySelector('.linkedin');
+const generateGlitch = (symbols, length) => {
+  let glitch = "";
+  for(let i=0; i<length; i++) glitch += symbols.charAt(Math.random()*symbols.length);
+  
+  return glitch;
+};
 
-githubButton.addEventListener('mouseover', (e) => {
-    new AnimatedText(githubButton, ['GitHub', "*&$^@#", "@*)^@="], 200, 50);
+const glitchOnHover = (element, duration) => {
+  const text = element.innerText;
+  const symbols = "!@#$%^&*?<>/\_";
+  const rounds = 5;
+  
+  element.addEventListener("mouseover", (e) => {
+    let round = 0;
+    
+    const interval = setInterval(() => {
+      element.innerText = generateGlitch(symbols, text.length);
+      round++;
+
+      if(round === rounds){
+        clearInterval(interval);
+        element.innerText = text;
+      }
+    }, duration/rounds);
+  });
+};
+
+links.forEach(link => {
+  glitchOnHover(link, 500);
 });
-githubButton.addEventListener('mouseleave', () => {
-    githubButton.textContent = "GitHub";
-    newAnim1.stopAnimation();
-})

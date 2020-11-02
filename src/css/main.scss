@@ -10,6 +10,8 @@ body {
     width: 100vw;
     background-color: black;
     cursor: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 a:link {
     color: white;

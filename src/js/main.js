@@ -48,6 +48,7 @@ const generateGlitch = (symbols, length) => {
 
 const glitchOnHover = (element, duration) => {
   const text = element.innerText;
+  const textHtml = element.innerHTML;
   const symbols = "!@#$%^&*?<>/\_";
   const rounds = 5;
   
@@ -60,7 +61,7 @@ const glitchOnHover = (element, duration) => {
 
       if(round === rounds){
         clearInterval(interval);
-        element.innerText = text;
+        element.innerHTML = textHtml;
       }
     }, duration/rounds);
   });

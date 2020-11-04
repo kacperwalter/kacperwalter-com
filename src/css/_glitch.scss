@@ -10,19 +10,18 @@
 .glitch:hover {
     position: relative;
     color: white;
-    // font-size: 1.6em;
     animation: glitch-skew 1s infinite linear alternate-reverse;
     &::before {
         @include glitchCopy;
         left: 2px;
-        text-shadow: -2px 0 #ff00c1;
+        text-shadow: -2px 0 yellowgreen;
         clip: rect(44px, 450px, 56px, 0);
         animation: glitch-anim 5s infinite linear alternate-reverse;
     }
     &::after {
         @include glitchCopy;
         left: -2px;
-        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+        text-shadow: -2px 0 #00fff9, 2px 2px yellowgreen;
         animation: glitch-anim2 1s infinite linear alternate-reverse;
     }
 }

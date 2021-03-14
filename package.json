@@ -1,0 +1,26 @@
+{
+  "name": "kacperwalter-com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./config/webpack.config.js",
+    "dev": "webpack --config ./config/webpack.config.js",
+    "prod": "webpack --config ./config/webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kacperwalter/kacperwalter-com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kacperwalter/kacperwalter-com/issues"
+  },
+  "homepage": "https://github.com/kacperwalter/kacperwalter-com#readme",
+  "devDependencies": {
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  }
+}

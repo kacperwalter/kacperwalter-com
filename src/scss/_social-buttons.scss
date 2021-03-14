@@ -10,3 +10,34 @@
         margin-left: 5%;
     }   
 }
+@media (min-width: 768px) {
+    .social-buttons {
+        margin-top: 5%;
+    }
+}
+@media (min-width: 992px) {
+    .social-buttons {
+        margin-top: 3%;
+        &__behance {
+            margin-left: 4%;
+        }
+        &__linkedin {
+            margin-left: 4%;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .social-buttons {
+        &__behance {
+            margin-left: 4%;
+        }
+        &__linkedin {
+            margin-left: 4%;
+        }
+    }
+}
+@media (min-width: 1700px) {
+    .social-buttons {
+        margin-top: 2%;
+    }
+}

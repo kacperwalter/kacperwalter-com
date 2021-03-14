@@ -6,3 +6,45 @@
         font-size: 1.7em;
     }
 }
+@media (min-width: 576px) {
+    .section {
+        &__description {
+            width: 85%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .section {
+        &__description {
+            width: 75%;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .section {
+        &__description {
+            width: 70%;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .section {
+        &__description {
+            width: 60%;
+        }
+    }
+}
+@media (min-width: 1350px) {
+    .section {
+        &__description {
+            width: 53%;
+        }
+    }
+}
+@media (min-width: 1700px) {
+    .section {
+        &__description {
+            width: 53%;
+        }
+    }
+}

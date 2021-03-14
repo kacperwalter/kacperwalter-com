@@ -2,4 +2,6 @@ import './scss/index.scss';
 
 import { logo } from './javascript/logo';
 
-logo();
+window.addEventListener('DOMContentLoaded', (event) => {
+    logo();
+});

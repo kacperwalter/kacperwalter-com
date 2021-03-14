@@ -1,0 +1,12 @@
+.social-buttons {
+    display: flex;
+    margin-top: 6%;
+    font-weight: 300;
+    font-size: 1.6em;
+    &__behance {
+        margin-left: 5%;
+    }
+    &__linkedin {
+        margin-left: 5%;
+    }   
+}

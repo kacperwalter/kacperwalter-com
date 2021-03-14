@@ -8,18 +8,18 @@
     transition-timing-function: ease-out;
     animation: cursorAnim .5s infinite alternate;
     pointer-events: none;
-}
-.cursor::after {
-    content: "";
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    border: 8px solid gray;
-    border-radius: 50%;
-    opacity: .5;
-    top: -9px;
-    left: -9px;
-    animation: cursorAnim2 .5s infinite alternate;
+    &::after {
+        content: "";
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        border: 8px solid gray;
+        border-radius: 50%;
+        opacity: .5;
+        top: -9px;
+        left: -9px;
+        animation: cursorAnim2 .5s infinite alternate;
+    }
 }
 .cursor-expand {
     animation: cursorAnim3 .5s forwards;

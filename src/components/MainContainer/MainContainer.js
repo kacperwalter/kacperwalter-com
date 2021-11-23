@@ -1,10 +1,10 @@
 import React from 'react';
-import Root from 'views/Root';
+import styles from './MainContainer.module.scss';
 
 const MainContainer = () => (
-  <div>
+  <section className={`${styles.background}`}>
     <div>Works perfect!</div>
-  </div>
+  </section>
 );
 
 export default MainContainer;

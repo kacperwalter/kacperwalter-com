@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Header.module.scss';
 import logo from 'assets/kacperwalter-logo.svg';
 
@@ -10,5 +11,11 @@ const Header = (props) => (
     </section>
   </header>
 );
+
+Header.propTypes = {
+  props: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+  }),
+};
 
 export default Header;

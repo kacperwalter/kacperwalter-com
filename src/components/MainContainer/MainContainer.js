@@ -3,7 +3,9 @@ import styles from './MainContainer.module.scss';
 
 const MainContainer = () => (
   <section className={`${styles.background}`}>
-    <div>Works perfect!</div>
+    <main className={`${styles.MainContainer}`}>
+      <div>Tu jest main container</div>
+    </main>
   </section>
 );
 

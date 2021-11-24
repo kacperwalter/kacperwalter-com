@@ -1,7 +1,12 @@
 .Header {
-  
+  .Logo {
+    width: 200px;
+  }
+
+  .HeaderText {
+    font-weight: 500;
+    font-size: 1.6em;
+    color: white;
+  }
 }
 
-.headerText {
-  color: white;
-}

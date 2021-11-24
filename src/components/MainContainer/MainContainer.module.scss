@@ -10,10 +10,13 @@
   .MainContainer {
     width: 90%;
     height: 85%;
-    background-color: red;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
+  }
+
+  .ButtonContainer {
+
   }
 }

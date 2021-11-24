@@ -12,9 +12,11 @@ const MainContainer = () => (
       <Header text={textContent.headerText} />
       <div className={`${styles.DescriptionContainer}`}>
         <Description text={textContent.mainParagraph} />
-        {links.map((linksData) => (
-          <LinkButton linksData={linksData} />
-        ))}
+        <div className={`${styles.ButtonContainer}`}>
+          {links.map((linksData) => (
+            <LinkButton linksData={linksData} />
+          ))}
+        </div>
       </div>
     </main>
   </section>

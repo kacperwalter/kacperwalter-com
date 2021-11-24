@@ -7,16 +7,14 @@ import Description from 'components/Description/Description';
 import LinkButton from 'components/LinkButton/LinkButton';
 
 const MainContainer = () => (
-  <section className={`${styles.background}`}>
+  <section className={`${styles.Background}`}>
     <main className={`${styles.MainContainer}`}>
       <Header text={textContent.headerText} />
-      <div>
+      <div className={`${styles.DescriptionContainer}`}>
         <Description text={textContent.mainParagraph} />
-        <div>
-          {links.map((linksData) => (
-            <LinkButton linksData={linksData} />
-          ))}
-        </div>
+        {links.map((linksData) => (
+          <LinkButton linksData={linksData} />
+        ))}
       </div>
     </main>
   </section>

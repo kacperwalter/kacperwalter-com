@@ -8,8 +8,8 @@ const MainContainer = () => (
   <section className={`${styles.background}`}>
     <main className={`${styles.MainContainer}`}>
       <Header text={textContent.headerText} />
+      <Description text={textContent.mainParagraph} />
     </main>
-    <Description text={textContent.mainParagraph} />
   </section>
 );
 

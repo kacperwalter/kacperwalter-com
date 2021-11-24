@@ -12,9 +12,11 @@ const MainContainer = () => (
       <Header text={textContent.headerText} />
       <div>
         <Description text={textContent.mainParagraph} />
-        {links.map((linksData) => (
-          <LinkButton linksData={linksData} />
-        ))}
+        <div>
+          {links.map((linksData) => (
+            <LinkButton linksData={linksData} />
+          ))}
+        </div>
       </div>
     </main>
   </section>

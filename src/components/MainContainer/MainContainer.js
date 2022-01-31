@@ -4,6 +4,7 @@ import { links } from 'data/button-links';
 import Header from 'components/Header/Header';
 import Description from 'components/Description/Description';
 import LinkButton from 'components/LinkButton/LinkButton';
+import Cursor from 'components/Cursor/Cursor';
 
 const MainContainer = () => (
   <section className={`${styles.Background}`}>
@@ -17,6 +18,7 @@ const MainContainer = () => (
           ))}
         </div>
       </div>
+      <Cursor />
     </main>
   </section>
 );

@@ -111,6 +111,13 @@ a:visited {
 .main-container section .description {
     width: 100%;
     font-size: 1.7em;
+    transition: ease-in-out 1s;
+
+    &__ng-link { 
+        &:hover {
+            color: #00d563;
+        }
+    }
 }
 .main-container section .social-buttons {
     display: flex;

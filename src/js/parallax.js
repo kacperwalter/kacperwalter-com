@@ -8,11 +8,8 @@ const parallax = (e) => {
 }
 
 const parallaxCondition = () => {
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        return;
-    } else {
-        document.addEventListener('mousemove', parallax);
-    }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) return;
+    document.addEventListener('mousemove', parallax);
 }
 
 parallaxCondition();

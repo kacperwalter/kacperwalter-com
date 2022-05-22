@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+.glitch:hover {
+  position: relative;
+  color: white;
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+
+.glitch:hover::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: 2px;
+  text-shadow: -2px 0 #00d563;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px #00d563;
+  animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(3px, 9999px, 71px, 0);
+    transform: skew(0.57deg);
+  }
+  5% {
+    clip: rect(17px, 9999px, 13px, 0);
+    transform: skew(0.81deg);
+  }
+  10% {
+    clip: rect(88px, 9999px, 83px, 0);
+    transform: skew(0.44deg);
+  }
+  15% {
+    clip: rect(22px, 9999px, 69px, 0);
+    transform: skew(0.26deg);
+  }
+  20% {
+    clip: rect(73px, 9999px, 44px, 0);
+    transform: skew(0.15deg);
+  }
+  25% {
+    clip: rect(15px, 9999px, 37px, 0);
+    transform: skew(0.59deg);
+  }
+  30% {
+    clip: rect(47px, 9999px, 21px, 0);
+    transform: skew(0.82deg);
+  }
+  35% {
+    clip: rect(10px, 9999px, 17px, 0);
+    transform: skew(0.6deg);
+  }
+  40% {
+    clip: rect(61px, 9999px, 47px, 0);
+    transform: skew(0.27deg);
+  }
+  45% {
+    clip: rect(41px, 9999px, 77px, 0);
+    transform: skew(0.69deg);
+  }
+  50% {
+    clip: rect(23px, 9999px, 95px, 0);
+    transform: skew(0.63deg);
+  }
+  55% {
+    clip: rect(61px, 9999px, 16px, 0);
+    transform: skew(0.88deg);
+  }
+  60% {
+    clip: rect(8px, 9999px, 86px, 0);
+    transform: skew(0.09deg);
+  }
+  65% {
+    clip: rect(23px, 9999px, 26px, 0);
+    transform: skew(0.22deg);
+  }
+  70% {
+    clip: rect(84px, 9999px, 30px, 0);
+    transform: skew(0.17deg);
+  }
+  75% {
+    clip: rect(29px, 9999px, 78px, 0);
+    transform: skew(0.89deg);
+  }
+  80% {
+    clip: rect(39px, 9999px, 52px, 0);
+    transform: skew(0.22deg);
+  }
+  85% {
+    clip: rect(75px, 9999px, 59px, 0);
+    transform: skew(0.72deg);
+  }
+  90% {
+    clip: rect(64px, 9999px, 2px, 0);
+    transform: skew(0.16deg);
+  }
+  95% {
+    clip: rect(60px, 9999px, 51px, 0);
+    transform: skew(0.39deg);
+  }
+  100% {
+    clip: rect(71px, 9999px, 84px, 0);
+    transform: skew(0.45deg);
+  }
+}
+
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(68px, 9999px, 50px, 0);
+    transform: skew(0.19deg);
+  }
+  5% {
+    clip: rect(54px, 9999px, 39px, 0);
+    transform: skew(0.95deg);
+  }
+  10% {
+    clip: rect(96px, 9999px, 38px, 0);
+    transform: skew(0.69deg);
+  }
+  15% {
+    clip: rect(4px, 9999px, 10px, 0);
+    transform: skew(0.39deg);
+  }
+  20% {
+    clip: rect(68px, 9999px, 90px, 0);
+    transform: skew(0.78deg);
+  }
+  25% {
+    clip: rect(76px, 9999px, 47px, 0);
+    transform: skew(0.63deg);
+  }
+  30% {
+    clip: rect(67px, 9999px, 57px, 0);
+    transform: skew(0.6deg);
+  }
+  35% {
+    clip: rect(60px, 9999px, 83px, 0);
+    transform: skew(0.54deg);
+  }
+  40% {
+    clip: rect(10px, 9999px, 19px, 0);
+    transform: skew(0.64deg);
+  }
+  45% {
+    clip: rect(17px, 9999px, 68px, 0);
+    transform: skew(0.15deg);
+  }
+  50% {
+    clip: rect(34px, 9999px, 8px, 0);
+    transform: skew(0.1deg);
+  }
+  55% {
+    clip: rect(79px, 9999px, 22px, 0);
+    transform: skew(0.67deg);
+  }
+  60% {
+    clip: rect(27px, 9999px, 84px, 0);
+    transform: skew(0.48deg);
+  }
+  65% {
+    clip: rect(66px, 9999px, 69px, 0);
+    transform: skew(0.88deg);
+  }
+  70% {
+    clip: rect(100px, 9999px, 59px, 0);
+    transform: skew(0.98deg);
+  }
+  75% {
+    clip: rect(40px, 9999px, 71px, 0);
+    transform: skew(0.5deg);
+  }
+  80% {
+    clip: rect(60px, 9999px, 66px, 0);
+    transform: skew(0.75deg);
+  }
+  85% {
+    clip: rect(66px, 9999px, 16px, 0);
+    transform: skew(0.39deg);
+  }
+  90% {
+    clip: rect(4px, 9999px, 87px, 0);
+    transform: skew(0.63deg);
+  }
+  95% {
+    clip: rect(13px, 9999px, 12px, 0);
+    transform: skew(0.76deg);
+  }
+  100% {
+    clip: rect(28px, 9999px, 24px, 0);
+    transform: skew(0.35deg);
+  }
+}
+
+@keyframes glitch-skew {
+  0% {
+    transform: skew(-1deg);
+  }
+  10% {
+    transform: skew(3deg);
+  }
+  20% {
+    transform: skew(-4deg);
+  }
+  30% {
+    transform: skew(-3deg);
+  }
+  40% {
+    transform: skew(-3deg);
+  }
+  50% {
+    transform: skew(1deg);
+  }
+  60% {
+    transform: skew(5deg);
+  }
+  70% {
+    transform: skew(-2deg);
+  }
+  80% {
+    transform: skew(1deg);
+  }
+  90% {
+    transform: skew(5deg);
+  }
+  100% {
+    transform: skew(5deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  cursor: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+  cursor: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: none;
+}
+
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: .5;
+  top: -9px;
+  left: -9px;
+  animation: cursorAnim2 .5s infinite alternate;
+}
+
+.cursor-expand {
+  animation: cursorAnim3 .5s forwards;
+  border: 1px solid white;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+#bg {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  color: white;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container nav img {
+  width: 200px;
+}
+
+.main-container nav h1 {
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+.main-container section {
+  position: absolute;
+  bottom: 7%;
+}
+
+.main-container section .description {
+  width: 100%;
+  font-size: 1.7em;
+  transition: ease-in-out 1s;
+}
+
+.main-container section .description__ng-link:hover {
+  color: #00d563;
+}
+
+.main-container section .social-buttons {
+  display: flex;
+  margin-top: 6%;
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.main-container section .social-buttons .behance {
+  margin-left: 5%;
+}
+
+.main-container section .social-buttons .linkedin {
+  margin-left: 5%;
+}
+
+@media (min-width: 576px) {
+  .main-container section .description {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container section .description {
+    width: 75%;
+  }
+  .main-container section .social-buttons {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-container section .description {
+    width: 70%;
+  }
+  .main-container section .social-buttons {
+    margin-top: 3%;
+  }
+  .main-container section .social-buttons .behance {
+    margin-left: 4%;
+  }
+  .main-container section .social-buttons .linkedin {
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container section .description {
+    width: 60%;
+  }
+  .main-container section .social-buttons .behance {
+    margin-left: 4%;
+  }
+  .main-container section .social-buttons .linkedin {
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .main-container section .description {
+    width: 53%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .main-container {
+    width: 90%;
+  }
+  .main-container section .description {
+    width: 42%;
+  }
+  .main-container section .social-buttons {
+    margin-top: 2%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

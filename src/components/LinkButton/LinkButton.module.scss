@@ -1,0 +1,8 @@
+.LinkButton {
+  font-weight: 300;
+  font-size: 1.6em;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}

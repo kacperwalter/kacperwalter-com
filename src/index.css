@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* background-color: black; */
+  /* cursor: none; */
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+}
+a:link {
+  color: white;
+  text-decoration: none;
+  /* cursor: none; */
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+  /* cursor: none; */
+}

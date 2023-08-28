@@ -1,8 +1,10 @@
+import Hero from './components/Hero/Hero'
+
 function App() {
 
   return (
     <>
-      <p>kacperwalter.com</p>
+      <Hero />
     </>
   )
 }

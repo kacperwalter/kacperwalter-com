@@ -14,8 +14,8 @@ const Hero = () => {
           Hi there 👋 I'm Kacper and I am front-ending for a living. Let's get in touch!
         </h2>
         <a className={styles.link} href="#">GitHub</a>
-        <a className={styles.link} href="#">GitHub</a>
-        <a className={styles.link} href="#">GitHub</a>
+        <a className={styles.link} href="#">Linkedin</a>
+        <a className={styles.link} href="#">Instagram</a>
       </article>
     </section>
   )

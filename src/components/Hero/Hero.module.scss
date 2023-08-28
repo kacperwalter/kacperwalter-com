@@ -29,7 +29,15 @@
 }
 
 .link {
+  text-decoration: none;
+  font-style: italic;
+
   &:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
   }
 }

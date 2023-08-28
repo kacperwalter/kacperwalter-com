@@ -20,8 +20,16 @@
 
 .description {
   max-width: 50rem;
+  font-size: 1.9rem;
 }
 
 .caption {
   font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.link {
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
 }

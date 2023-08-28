@@ -13,9 +13,9 @@ const Hero = () => {
         <h2 className={styles.caption}>
           Hi there 👋 I'm Kacper and I am front-ending for a living. Let's get in touch!
         </h2>
-        <a href="#">GitHub</a>
-        <a href="#">GitHub</a>
-        <a href="#">GitHub</a>
+        <a className={styles.link} href="#">GitHub</a>
+        <a className={styles.link} href="#">GitHub</a>
+        <a className={styles.link} href="#">GitHub</a>
       </article>
     </section>
   )

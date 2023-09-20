@@ -1,4 +1,4 @@
-.hero {
+.homepage-hero {
   background-color: black;
   height: 100vh;
   width: 100%;
@@ -7,37 +7,37 @@
   flex-direction: column;
   justify-content: space-between;
   color: white;
-}
 
-.logo {
-  max-width: 23rem;
-}
-
-.heading {
-  font-size: 2.5rem;
-  text-transform: lowercase;
-}
-
-.description {
-  max-width: 50rem;
-  font-size: 1.9rem;
-}
-
-.caption {
-  font-weight: 400;
-  margin-bottom: 3rem;
-}
-
-.link {
-  text-decoration: none;
-  font-style: italic;
-
-  &:not(:last-child) {
-    margin-right: 2rem;
+  &__logo {
+    max-width: 23rem;
   }
 
-  &:hover,
-  &:active {
-    text-decoration: underline;
+  &__heading {
+    font-size: 2.5rem;
+    text-transform: lowercase;
+  }
+
+  &__description {
+    max-width: 50rem;
+    font-size: 1.9rem;
+  }
+
+  &__caption {
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-style: italic;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
   }
 }

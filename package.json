@@ -13,7 +13,9 @@
     "eslint-config-next": "13.5.1",
     "next": "13.5.1",
     "react": "18.2.0",
+    "react-animated-cursor": "^2.8.1",
     "react-dom": "18.2.0",
+    "react-parallax-mouse": "^2.0.1",
     "sass": "^1.67.0"
   }
 }

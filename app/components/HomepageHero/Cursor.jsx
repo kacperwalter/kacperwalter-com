@@ -1,7 +1,10 @@
+'use client';
+
 import AnimatedCursor from "react-animated-cursor"
 
 const Cursor = () => {
   return (
+    // TODO This thing couses many error in console but works
     <AnimatedCursor
       innerSize={8}
       outerSize={30}

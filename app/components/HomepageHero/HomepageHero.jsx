@@ -1,37 +1,37 @@
-'use client';
 import Image from 'next/image'
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 import headerImage from '../../../public/kacperwalter-logo.svg'
+import { heading, caption, links, imageAlt } from '../../../data/heroContent.js'
 import './HomepageHero.scss'
 
 import Cursor from './Cursor'
+import MainParallaxContainer from './parallax/MainParallaxContainer'
+import HeaderParallaxContainer from './parallax/HeaderParallaxContainer'
+import CaptionParallaxContainer from './parallax/CaptionParallaxContainer'
 
 const HomepageHero = () => {
   return (
     <>
       <Cursor />
-      <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
+      <MainParallaxContainer>
         <section className='homepage-hero'>
-          <MouseParallaxChild factorX={0.3} factorY={0.5}>
+          <HeaderParallaxContainer>
             <header>
-              <Image className='homepage-hero__logo' src={headerImage} />
-              <h1 className='homepage-hero__heading'>Frontend software developer</h1>
+              <Image className='homepage-hero__logo' src={headerImage} alt={imageAlt} />
+              <h1 className='homepage-hero__heading'>{heading}</h1>
             </header>
-          </MouseParallaxChild>
+          </HeaderParallaxContainer>
 
-          <MouseParallaxChild factorX={0.6} factorY={0.2}>
+          <CaptionParallaxContainer>
             <article className='homepage-hero__description'>
               <h2 className='homepage-hero__caption'>
-                Hi there 👋 I'm Kacper and I am front-ending for a living. Let's get in touch!
+                {caption}
               </h2>
-              <a className='homepage-hero__link' href="https://github.com/kacperwalter">GitHub</a>
-              <a className='homepage-hero__link' href="https://www.linkedin.com/in/kacper-walter/">Linkedin</a>
-              <a className='homepage-hero__link' href="https://instagram.com/wacperkalter?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+              {links.map(link => <a className='homepage-hero__link' key={link.key} href={link.href}>{link.text}</a>)}
             </article>
-          </MouseParallaxChild>
+          </CaptionParallaxContainer>
         </section>
-      </MouseParallaxContainer>
+      </MainParallaxContainer>
     </>
   )
 }

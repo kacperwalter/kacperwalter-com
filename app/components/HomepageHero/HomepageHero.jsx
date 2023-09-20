@@ -1,8 +1,11 @@
+'use client';
+import Image from 'next/image'
 
+import headerImage from '../../../public/kacperwalter-logo.svg'
 
 const HomepageHero = () => {
   return (
-    <div>HomepageHero</div>
+    <Image src={headerImage} />
   )
 }
 

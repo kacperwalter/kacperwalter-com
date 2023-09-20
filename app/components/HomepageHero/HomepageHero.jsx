@@ -4,7 +4,6 @@ import headerImage from '../../../public/kacperwalter-logo.svg'
 import { heading, caption, links, imageAlt } from '../../../data/heroContent.js'
 import './HomepageHero.scss'
 
-import Cursor from './Cursor'
 import MainParallaxContainer from './parallax/MainParallaxContainer'
 import HeaderParallaxContainer from './parallax/HeaderParallaxContainer'
 import CaptionParallaxContainer from './parallax/CaptionParallaxContainer'
@@ -12,7 +11,6 @@ import CaptionParallaxContainer from './parallax/CaptionParallaxContainer'
 const HomepageHero = () => {
   return (
     <>
-      <Cursor />
       <MainParallaxContainer>
         <section className='homepage-hero'>
           <HeaderParallaxContainer>

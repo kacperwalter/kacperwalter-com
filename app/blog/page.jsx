@@ -1,4 +1,5 @@
 import BlogFeed from "../components/BlogFeed/BlogFeed"
+import Navbar from "../components/Navbar/Navbar"
 
 export const metadata = {
   title: 'Blog about frontend development | kacperwalter.com',
@@ -7,7 +8,10 @@ export const metadata = {
 
 const BlogMainPage = () => {
   return (
-    <BlogFeed />
+    <>
+      <Navbar />
+      <BlogFeed />
+    </>
   )
 }
 

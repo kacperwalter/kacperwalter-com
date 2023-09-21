@@ -1,4 +1,4 @@
-import './globals.scss'
+import './layout.scss'
 import { Open_Sans } from 'next/font/google'
 
 const openSans = Open_Sans({

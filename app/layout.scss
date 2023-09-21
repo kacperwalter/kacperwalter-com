@@ -5,6 +5,11 @@
   -webkit-text-fill-color: currentcolor;
 }
 
+:root {
+  --color-dark: #121212;
+  --color-white: white;
+}
+
 html {
   font-size: 62.5%;
   --cursor-color: white;
@@ -12,6 +17,8 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: var(--color-dark);
+  color: var(--color-white);
 }
 
 body,

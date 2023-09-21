@@ -1,25 +1,28 @@
 .homepage-hero {
-  background-color: black;
+  background: url('/hero-background-photo.jpg');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
+  max-height: 100rem;
   width: 100%;
   padding: 8% 8%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
+  position: relative;
 
   &__logo {
     max-width: 23rem;
   }
 
   &__heading {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-transform: lowercase;
   }
 
   &__description {
-    max-width: 50rem;
-    font-size: 1.9rem;
+    max-width: 60rem;
   }
 
   &__caption {
@@ -30,6 +33,7 @@
   &__link {
     text-decoration: none;
     font-style: italic;
+    font-size: 1.9rem;
 
     &:not(:last-child) {
       margin-right: 2rem;

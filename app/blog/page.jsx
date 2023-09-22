@@ -1,3 +1,5 @@
+import { client } from "@/app/lib/sanity"
+
 import BlogFeed from "../components/BlogFeed/BlogFeed"
 import Navbar from "../components/Navbar/Navbar"
 
@@ -10,11 +12,18 @@ export const metadata = {
   }
 }
 
-const BlogMainPage = () => {
+export const getPosts = async () => {
+  const query = `*[_type == 'post']`
+  const data = await client.fetch(query)
+
+  return { props: { data } }
+}
+
+const BlogMainPage = async () => {
   return (
     <>
       <Navbar />
-      <BlogFeed />
+      <BlogFeed posts={(await getPosts()).props.data} />
     </>
   )
 }

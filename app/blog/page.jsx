@@ -14,16 +14,18 @@ export const metadata = {
 
 export const getPosts = async () => {
   const query = `*[_type == 'post']`
-  const data = await client.fetch(query)
+  const data = await client.fetch(query, {}, { cache: 'no-store' })
 
   return { props: { data } }
 }
 
 const BlogMainPage = async () => {
+  const posts = (await getPosts()).props.data
+
   return (
     <>
       <Navbar />
-      <BlogFeed posts={(await getPosts()).props.data} />
+      <BlogFeed posts={posts} />
     </>
   )
 }

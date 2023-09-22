@@ -1,15 +1,6 @@
-import { client } from "@/app/lib/sanity"
 import Link from "next/link"
 
-const getData = async () => {
-  const query = `*[_type == 'post']`
-  const data = await client.fetch(query)
-  return data
-}
-
-const BlogFeed = async () => {
-  const posts = await getData();
-
+const BlogFeed = ({ posts }) => {
   return (
     <section>
       <h1>All blog posts</h1>

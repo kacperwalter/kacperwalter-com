@@ -25,7 +25,7 @@ const HomepageHero = () => {
               <h2 className='homepage-hero__caption'>
                 {caption}
               </h2>
-              {links.map(link => <a className='homepage-hero__link' key={link.key} href={link.href}>{link.text}</a>)}
+              {links.map(link => <a className='homepage-hero__link' key={link.id} href={link.href}>{link.text}</a>)}
             </article>
           </CaptionParallaxContainer>
         </section>

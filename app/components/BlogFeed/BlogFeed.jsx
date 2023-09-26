@@ -1,9 +1,12 @@
 import Link from "next/link"
 
+import "./BlogFeed.scss"
+import Heading from "../UI/Heading/Heading"
+
 const BlogFeed = ({ posts }) => {
   return (
-    <section>
-      <h1>All my blog posts</h1>
+    <section class="blog-feed">
+      <Heading type="h1">All blog posts</Heading>
       <ul>
         {posts.map(post => (
           <li key={post._id}>

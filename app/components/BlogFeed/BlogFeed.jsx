@@ -7,7 +7,7 @@ const BlogFeed = ({ posts }) => {
   return (
     <section class="blog-feed">
       <Heading type="h1">All blog posts</Heading>
-      <ul>
+      <ul className="blog-feed__list">
         {posts.map(post => (
           <li key={post._id}>
             <article>

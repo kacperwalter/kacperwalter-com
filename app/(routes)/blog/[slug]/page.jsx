@@ -1,6 +1,8 @@
 const { client } = require("@/app/lib/sanity")
 
 import Navbar from "@/app/components/Navbar/Navbar"
+import Wrapper from "@/app/components/UI/Wrapper/Wrapper"
+
 import { urlFor } from "@/app/lib/sanityImageUrl"
 import { PortableText } from "@portabletext/react"
 import Image from "next/image"
@@ -39,8 +41,10 @@ const BlogPost = async ({ params }) => {
     <>
       <Navbar />
       <section>
-        <h1>{data.title}</h1>
-        <PortableText value={data.content} components={PortableTextComponent} />
+        <Wrapper>
+          <h1>{data.title}</h1>
+          <PortableText value={data.content} components={PortableTextComponent} />
+        </Wrapper>
       </section>
     </>
   )

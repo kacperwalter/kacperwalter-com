@@ -3,7 +3,7 @@ import Link from "next/link"
 const BlogFeed = ({ posts }) => {
   return (
     <section>
-      <h1>All blog posts</h1>
+      <h1>All my blog posts</h1>
       <ul>
         {posts.map(post => (
           <li key={post._id}>

@@ -1,7 +1,7 @@
 import { client } from "@/app/lib/sanity"
 
-import BlogFeed from "../../components/BlogFeed/BlogFeed"
-import Navbar from "../../components/Navbar/Navbar"
+import BlogFeed from "@/app/components/BlogFeed/BlogFeed"
+import Navbar from "@/app/components/Navbar/Navbar"
 import Wrapper from "@/app/components/UI/Wrapper/Wrapper"
 
 export const metadata = {

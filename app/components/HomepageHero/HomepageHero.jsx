@@ -1,4 +1,4 @@
-import { heading, caption, links } from '../../../data/heroContent.js'
+import { heading, caption, links } from '@/data/heroContent.js'
 import './HomepageHero.scss'
 
 import MainParallaxContainer from './parallax/MainParallaxContainer'

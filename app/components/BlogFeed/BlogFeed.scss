@@ -1,0 +1,9 @@
+.blog-feed {
+  display: grid;
+  gap: 3rem;
+
+  &__list {
+    display: grid;
+    gap: 3rem;
+  }
+}

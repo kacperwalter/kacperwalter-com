@@ -39,7 +39,7 @@
     );
   }
 
-  @include media(print) {
+  @media print {
     max-width: calc(var(--wrapper-max-width) + 2 * var(--wrapper-padding));
   }
 }

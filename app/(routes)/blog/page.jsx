@@ -2,6 +2,7 @@ import { client } from "@/app/lib/sanity"
 
 import BlogFeed from "../../components/BlogFeed/BlogFeed"
 import Navbar from "../../components/Navbar/Navbar"
+import Wrapper from "@/app/components/UI/Wrapper/Wrapper"
 
 export const metadata = {
   title: 'Blog about frontend development | kacperwalter.com',
@@ -25,7 +26,9 @@ const BlogMainPage = async () => {
   return (
     <>
       <Navbar />
-      <BlogFeed posts={posts} />
+      <Wrapper>
+        <BlogFeed posts={posts} />
+      </Wrapper>
     </>
   )
 }

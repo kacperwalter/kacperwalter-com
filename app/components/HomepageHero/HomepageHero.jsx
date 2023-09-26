@@ -1,4 +1,3 @@
-import headerImage from '../../../public/kacperwalter-logo.svg'
 import { heading, caption, links } from '../../../data/heroContent.js'
 import './HomepageHero.scss'
 

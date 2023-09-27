@@ -5,7 +5,7 @@ import Heading from "../UI/Heading/Heading"
 
 const BlogFeed = ({ posts }) => {
   return (
-    <section class="blog-feed">
+    <section className="blog-feed">
       <Heading type="h1">All blog posts</Heading>
       <ul className="blog-feed__list">
         {posts.map(post => (

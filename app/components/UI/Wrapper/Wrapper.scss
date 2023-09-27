@@ -1,0 +1,45 @@
+:root {
+  --wrapper-max-width: 120rem;
+  --wrapper-max-width-narrow: 106rem;
+  --wrapper-max-width-wide: 148rem;
+  --wrapper-max-width-tablet-h: 92rem;
+  --wrapper-max-width-tablet: 68rem;
+  --wrapper-max-width-mobile: 54rem;
+  --wrapper-padding: 2.4rem;
+}
+
+.wrapper {
+  max-width: calc(var(--wrapper-max-width) + 2 * var(--wrapper-padding));
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--wrapper-padding);
+  padding-right: var(--wrapper-padding);
+
+  @media print {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  @media(max-width: 1349px) {
+    max-width: calc(
+      var(--wrapper-max-width-tablet-h) + 2 * var(--wrapper-padding)
+    );
+  }
+
+  @media(max-width: 1023px) {
+    max-width: calc(
+      var(--wrapper-max-width-tablet) + 2 * var(--wrapper-padding)
+    );
+  }
+
+  @media(max-width: 767px) {
+    max-width: calc(
+      var(--wrapper-max-width-mobile) + 2 * var(--wrapper-padding)
+    );
+  }
+
+  @media print {
+    max-width: calc(var(--wrapper-max-width) + 2 * var(--wrapper-padding));
+  }
+}

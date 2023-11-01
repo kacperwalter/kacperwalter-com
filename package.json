@@ -19,6 +19,6 @@
     "react-animated-cursor": "^2.8.1",
     "react-dom": "18.2.0",
     "react-parallax-mouse": "^2.0.1",
-    "sass": "^1.67.0"
+    "sass": "^1.69.2"
   }
 }

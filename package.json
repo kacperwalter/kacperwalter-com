@@ -11,7 +11,7 @@
   "dependencies": {
     "@portabletext/react": "^3.0.7",
     "@sanity/image-url": "^1.0.2",
-    "eslint": "8.49.0",
+    "eslint": "10.0.0",
     "eslint-config-next": "13.5.1",
     "next": "13.5.4",
     "next-sanity": "^5.5.4",
